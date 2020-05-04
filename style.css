@@ -54,9 +54,9 @@ input:focus {
     width: 300px;
 background: linear-gradient(90deg, rgba(211,219,255,1) 0%, rgba(195,198,255,1) 25%, rgba(204,221,255,1) 79%);
 
-    position: absolute;
-    left: 500px;
-    top:50px;
+  position: relative;
+   /*   right:-490px;*/
+    top:40px;
     border: 4px white;
     border-style: solid;
     border-radius: 10%
@@ -70,9 +70,9 @@ background: linear-gradient(90deg, rgba(211,219,255,1) 0%, rgba(195,198,255,1) 2
 width:55px;
 
 background-color: black;
-position: fixed;
-top:160px;
-left:625px;
+position: absolute;
+top:105px;
+left:126px;
 
 animation-name: blink;
 animation-duration: 9s;
@@ -90,25 +90,16 @@ animation-iteration-count: infinite;
 }
 
 
-.cover{
-        width:28px;
-    height: 10px;
 
-background-color: black;
-position: fixed;
-top:244px;
-left:640px;
-border-radius: 50%;
-    
-}
 .mouth{
     width:35px;
     height: 1px;
 
 background-color: white;
-position: fixed;
-top:244px;
-left:636px;
+position: absolute;
+top: 192px;
+left: 134px;
+
 border-radius: 50%;
     
 
@@ -123,16 +114,17 @@ animation-fill-mode: forwards;
 
 @keyframes yawn {
     from {height: 1px;
-            top: 244px;
+            position: absolute;
             width:35px;
-            left:636px;
+       
     }
 
 
     to{ height: 150px;
-    top: 140px;
+        position: absolute;
+    top: 85px;
     width:180px;
-    left:564px;}
+    left:60px;}
 }*/
 
 
@@ -142,9 +134,9 @@ body {
 }
 
 .running {
-    position: fixed;
-    left:-200px;
-    bottom: -10px;
+    position: absolute;
+    left:-100px;
+    bottom: 0px;
     width: 100px;
     animation-name: running;
     animation-delay: 2s;
@@ -157,13 +149,40 @@ body {
 
 @keyframes running {
     from {
-        left:-200px;
+        position: absolute;
+        bottom: 0px;
+        left:-100px;
+        
     }
     to {
-        left: 2000px
+        position: absolute;
+        bottom: 0px;
+        left: 2000px;
     }
 }
+    body{
+        
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
 
-@media only screen and (max-width: 400px;){
+
+/*@media only screen and (max-width: 420px) {
+    body{
+        background-color:red;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .loginbox{
+        position: inherit;
+
+    }
+    
+   
     
 }
