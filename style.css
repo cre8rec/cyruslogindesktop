@@ -1,5 +1,6 @@
-
-
+*{
+    margin: 0;
+}
 .login {
     text-align: center;
 }
@@ -104,10 +105,10 @@ animation-iteration-count: infinite;
 }
 
 .running {
-    transform: scaleY(-1);
+   
     position: absolute;
     left: -100px;
-    top: 0px;
+    bottom: 0px;
     width: 100px;
     animation-name: running;
     animation-delay: 2s;
@@ -120,12 +121,12 @@ animation-iteration-count: infinite;
 @keyframes running {
     from {
         position: absolute;
-        top: 0px;
+        bottom:0px;
         left:-100px;       
     }
     to {
         position: absolute;
-        top: 0px;
+        bottom: 0px;
         left: 2000px;
     }
 }
@@ -138,6 +139,23 @@ body{
     overflow-x: hidden;
     }
 
-
-
-
+@media screen and (max-width: 500px) {
+    .running {
+        transform: scaleY(-1);
+        top: 0px;
+    }
+    
+    @keyframes running {
+        from {
+        position: absolute;
+        
+        bottom:0px;
+        left:-100px;       
+    }
+    to {
+        position: absolute;
+        bottom: 0px;
+        left: 2000px;
+    }
+    }   
+}
