@@ -104,9 +104,10 @@ animation-iteration-count: infinite;
 }
 
 .running {
+    transform: scaleY(-1);
     position: absolute;
-    right:-100px;
-    bottom: 0px;
+    left: -100px;
+    top: 0px;
     width: 100px;
     animation-name: running;
     animation-delay: 2s;
@@ -119,12 +120,12 @@ animation-iteration-count: infinite;
 @keyframes running {
     from {
         position: absolute;
-        bottom: 0px;
+        top: 0px;
         left:-100px;       
     }
     to {
         position: absolute;
-        bottom: 0px;
+        top: 0px;
         left: 2000px;
     }
 }
@@ -136,5 +137,7 @@ body{
     justify-content: center;
     overflow-x: hidden;
     }
+
+
 
 
