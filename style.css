@@ -2,13 +2,6 @@
 
 .login {
     text-align: center;
-
-    
-}
-
-.username {
-
-    
 }
 
 #avatar{
@@ -18,8 +11,8 @@
     border-style: solid;
     background-color: white;
     position: 
-    
 }
+
 .animation {
     text-align: center;
 }
@@ -53,32 +46,23 @@ input:focus {
 .loginbox {
     padding: 30px 0 50px 0;
     width: 300px;
-background: linear-gradient(90deg, rgba(211,219,255,1) 0%, rgba(195,198,255,1) 25%, rgba(204,221,255,1) 79%);
-
-  position: relative;
-   /*   right:-490px;*/
+    background: linear-gradient(90deg, rgba(211,219,255,1) 0%, rgba(195,198,255,1) 25%, rgba(204,221,255,1) 79%);
+    position: relative;
     top:40px;
     border: 4px white;
     border-style: solid;
-    border-radius: 10%
-        
-    
+    border-radius: 10% 
 }
-
-
 
 .eyelitop {
 width:55px;
-
 background-color: black;
 position: absolute;
 top:105px;
 left:126px;
-
 animation-name: blink;
 animation-duration: 9s;
 animation-iteration-count: infinite;
-
 }
 
 @keyframes blink {
@@ -90,48 +74,33 @@ animation-iteration-count: infinite;
     to{ height: 10px}
 }
 
-
-
 .mouth{
     width:35px;
     height: 1px;
-
-background-color: white;
-position: absolute;
-top: 192px;
-left: 134px;
-
-border-radius: 50%;
-    
-
-animation-name: yawn;
-animation-duration: 1s;
-animation-delay: 0.5s;
-animation-play-state: paused;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
+    background-color: white;
+    position: absolute;
+    top: 192px;
+    left: 134px;
+    border-radius: 50%;
+        animation-name: yawn;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-play-state: paused;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 }
-
 
 @keyframes yawn {
     from {height: 1px;
             position: absolute;
-            width:35px;
-       
+            width:35px; 
     }
-
 
     to{ height: 150px;
         position: absolute;
     top: 85px;
     width:180px;
     left:60px;}
-}*/
-
-
-
-body {
-    
 }
 
 .running {
@@ -145,15 +114,13 @@ body {
     animation-iteration-count: infinite;
     animation-play-state: paused;
     animation-fill-mode: forwards;
-    
 }
 
 @keyframes running {
     from {
         position: absolute;
         bottom: 0px;
-        left:-100px;
-        
+        left:-100px;       
     }
     to {
         position: absolute;
@@ -161,30 +128,13 @@ body {
         left: 2000px;
     }
 }
-    body{
-        
-        width: 100%;
-        display: flex;
-        margin: 0;
-        justify-content: center;
-        overflow-x: hidden;
+
+body{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
     }
 
 
-/*@media only screen and (max-width: 420px) {
-    body{
-        background-color:red;
-        width: 100%;
-        display: flex;
-        margin: 0;
-        justify-content: center;
-    }
-
-    .loginbox{
-        position: inherit;
-
-    }
-    
-   
-    
-}

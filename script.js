@@ -1,8 +1,7 @@
 
 var input = document.querySelector('.username')
 var password = document.querySelector('.password')
-var avatar = document.getElementById('avatar')//.src = 'img/1.png';
-
+var avatar = document.getElementById('avatar')
 var mouth = document.querySelector('.mouth')
 var running = document.querySelector('.running')
 
@@ -25,16 +24,17 @@ input.addEventListener('keydown', enter => {
 })
 
 password.addEventListener('focus', function(){
-                       avatar.src = 'img/blink1.png';
-                       });
+    avatar.src = 'img/blink1.png';
+});
+
 password.addEventListener('input', function(e) {
-                    var value = e.target.value;
-                    var pos = value.length + 1 ;
-                    avatar.src = 'img/blink' + pos + '.png';
-    if (pos >= 4){
-        avatar.src = 'img/blink4.png'
-    }
-    });
+    var value = e.target.value;
+    var pos = value.length + 1 ;
+    avatar.src = 'img/blink' + pos + '.png';
+        if (pos >= 4){
+            avatar.src = 'img/blink4.png'
+        }
+});
 
 password.addEventListener('keydown', enter => {if(event.key === 'Enter') {
     avatar.src = 'img/1.png'
@@ -42,6 +42,5 @@ password.addEventListener('keydown', enter => {if(event.key === 'Enter') {
     running.style.webkitAnimationPlayState = 'running';
     password.blur();
     setTimeout(location.reload.bind(location), 4000);
-
     } 
 })
