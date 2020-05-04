@@ -1,0 +1,169 @@
+
+.login {
+    text-align: center;
+
+    
+}
+
+.username {
+
+    
+}
+
+#avatar{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px white;
+    border-style: solid;
+    background-color: white;
+    position: 
+    
+}
+.animation {
+    text-align: center;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border: 4px white;
+    border-style: solid;
+    font-family: Arial;
+    font-size: 20px;
+    color: grey;
+    margin: 30px 0px 0px 0px;
+    letter-spacing: 0px;
+    border-radius: 10px;
+}
+
+input:hover {
+    outline: none;
+    box-shadow: 0px 0px 50px white
+}
+
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 50px white
+}
+
+
+.loginbox {
+    padding: 30px 0 50px 0;
+    width: 300px;
+background: linear-gradient(90deg, rgba(211,219,255,1) 0%, rgba(195,198,255,1) 25%, rgba(204,221,255,1) 79%);
+
+    position: absolute;
+    left: 500px;
+    top:50px;
+    border: 4px white;
+    border-style: solid;
+    border-radius: 10%
+        
+    
+}
+
+
+
+.eyelitop {
+width:55px;
+
+background-color: black;
+position: fixed;
+top:160px;
+left:625px;
+
+animation-name: blink;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes blink {
+    from {height: 10px}
+    8% {height: 70px}
+    14% {height: 10px}
+    22% {height: 70px}
+    28% {height: 10px}
+    to{ height: 10px}
+}
+
+
+.cover{
+        width:28px;
+    height: 10px;
+
+background-color: black;
+position: fixed;
+top:244px;
+left:640px;
+border-radius: 50%;
+    
+}
+.mouth{
+    width:35px;
+    height: 1px;
+
+background-color: white;
+position: fixed;
+top:244px;
+left:636px;
+border-radius: 50%;
+    
+
+animation-name: yawn;
+animation-duration: 1s;
+animation-delay: 0.5s;
+animation-play-state: paused;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes yawn {
+    from {height: 1px;
+            top: 244px;
+            width:35px;
+            left:636px;
+    }
+
+
+    to{ height: 150px;
+    top: 140px;
+    width:180px;
+    left:564px;}
+}*/
+
+
+
+body {
+    
+}
+
+.running {
+    position: fixed;
+    left:-200px;
+    bottom: -10px;
+    width: 100px;
+    animation-name: running;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes running {
+    from {
+        left:-200px;
+    }
+    to {
+        left: 2000px
+    }
+}
+
+@media only screen and (max-width: 400px;){
+    
+}
